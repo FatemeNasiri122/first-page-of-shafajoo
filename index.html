@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>شفاجو</title>
+</head>
+<body>
+
+<header id="header" class="nav-header">
+    <div class="fixed-top">
+        <a href="#" id="header-img">
+            <div class="navbar question w-100 justify-content-center p-0">
+                    <img src="image/teleshafa.png" alt="مشاوره پزشکی آنلاین شفاجو" class="img-fluid">
+            </div>
+        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="image/shafajoo_dark.png" alt="لوگو شفاجو" class="py-0">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav px-0 mt-2 mt-lg-0">
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link" href="#">پزشکان</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مراکز درمانی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مجله</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">رژیم آنلاین</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">کلاس مشاوره آنلاین</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درباره ما </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ارتباط با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">مشاوره پزشکی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ثبت نام پزشک</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">همکاری با شفاجو</a>
+                        </li>
+                    </ul>
+                    <button data-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-dark my-lg-2 my-0 me-auto" type="submit">ورود / ثبت نام</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-block ">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">ورود - ثبت نام در شفاجو</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="cellphoneNumber" class="form-label">شماره تلفن همراه<span class="text-danger px-1">*</span></label>
+                            <input type="text" class="form-control" id="cellphoneNumber" placeholder="مثلا: ۰۹۱۲۰۰۰۰۰۰۰">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-block text-center">
+                    <button type="button" class="btn background-blue text-white w-75 mx-5">ادامه</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-header">
+    <div class="section-header--inner">
+        <div class="container">
+                <div class="row py-5">
+                    <div class="col-12">
+                        <h1 class="fs-3 text-white text-center lead">سایت جامع خدمات سلامتی و پزشکی</h1>
+                    </div>
+                </div>
+            <div class="row pb-3">
+                <div class="col-6 col-lg-3 text-center">
+                    <a href="#">
+                        <img class="rounded img-fluid "
+                             src="https://shafajoo.com/images/main/header-article.png"
+                             alt="مقالات پزشکی و سلامتی">
+                        <p class="pt-2 text-white text-bold ">مقاله سلامتی بخوانید</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <a href="#">
+                        <img class="rounded img-fluid "
+                             src="https://shafajoo.com/images/main/header-doctor.png"
+                             alt="مقالات پزشکی و سلامتی">
+                        <p class="pt-2 text-white text-bold ">پزشک خود را بیابید</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <a href="#">
+                        <img class="rounded img-fluid "
+                             src="https://shafajoo.com/images/main/header-diet.png"
+                             alt="مقالات پزشکی و سلامتی">
+                        <p class="pt-2 text-white text-bold ">تغذیه خود را اصلاح کنید</p>
+                    </a>
+                </div>
+                <div class="col-6 col-lg-3 text-center">
+                    <a href="#">
+                        <img class="rounded img-fluid "
+                             src="https://shafajoo.com/images/main/header-video.png"
+                             alt="مقالات پزشکی و سلامتی">
+                        <p class="pt-2 text-white text-bold">از زبان پزشک بشنوید</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-article">
+    <div class="container">
+        <div class="row-cols-12 mt-5">
+            <div class="title"><span class="title-inner">مقالات پربازدید</span></div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12 col-lg-6 shadow rounded   p-0">
+                <a href="#" class="text-dark  m-0 d-block">
+                        <img src="image/Samy2aES1pXK9gN8fSSn.jpg" alt="" class="img-fluid w-100 rounded ">
+                    <p class="fw-bolder fs-3 px-3 pb-2 pt-4 lh-sm ">
+                        توصیه های تغذیه برای پیشگیری از بیماریهای تنفسی و کرونا
+                    </p>
+                    <p class="article-content px-3 w-100 text-break mb-0">
+                        عملکرد سیستم ایمنی بدن نقشی مهمی در پیشگیری از بیماریهای تنفسی از جمله بیماری
+                        ویروس کرونا دارد. عامل ابتلا به این ویروس بیماریهای زمینه ایی مثل دیابت و
+                        بیماریهای ریوی، بیمار یهای قلبی، سوء تغذیه و نداشتن تغذیه صحیح است. کمبود دریافت
+                        غذایی و کمبود ویتامین هایی مثل ویتامین C و A و D و تضعیف سیستم ایمنی بدن احتمال
+                        ابتلا به بیماریها را افزایش می دهد.
+                    </p>
+                    <p class="article-content px-3 my-0 w-100 text-break ">
+                        با مصرف روزانه منابع غذایی ویتامین C مثل مصرف سبزی و سالاد همراه با غذا، میوه
+                        های حاوی ویتامین C
+                        مثل
+                        <span class="text-secondary ">پرتقال، نارنگی، لیموشیرین، کیوی و سبزیهای دارای ویتامین C
+                        مثل انواع کلم، گل کلم، شلغم، فلفل سبز و</span>
+                    </p>
+
+                </a>
+            </div>
+            <div class="col-12 col-lg-6 mt-3">
+                <div class="row pb-3">
+                    <div class="col-12 col-lg-5">
+                        <img src="image/Knee-Pain.jpg" class="w-100 rounded  article-image" alt="درمان زانو درد">
+                    </div>
+                    <div class="col-12 col-lg-7 text-blue">
+                        <a href="#">
+                            <p class="color-blue mb-2 pb-2 d-none d-lg-block d-sm-hidden">
+                                آناتومی
+                            </p>
+                            <h4 class=" text-right mb-2 text-dark fs-6 fw-bold">
+                                از سیر تا پیاز زانو درد و درمان ها
+                            </h4>
+                            <p class="text-justify pt-2 d-none d-lg-block d-sm-hidden text-dark small-fontsize">
+                                    با توجه به سبک زندگی مدرن، زانو درد به یکی از مشکلات شایع تبدیل شده
+                                    است
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-12 col-lg-5">
+                        <img src="image/hdl.jpg" class="w-100 rounded  article-image" alt="زندگی سالم">
+                    </div>
+                    <div class="col-12 col-lg-7 text-blue">
+                        <a href="#">
+                            <p class="color-blue mb-2 pb-2 d-none d-lg-block ">
+                                زندگی سالم
+                            </p>
+                            <h4 class=" text-right mb-2 text-dark fs-6 fw-bold">
+                                از سیر تا پیاز زانو درد و درمان ها
+                            </h4>
+                            <p class="text-justify pt-2 d-none d-lg-block  text-dark small-fontsize">
+                                    با توجه به سبک زندگی مدرن، زانو درد به یکی از مشکلات شایع تبدیل شده
+                                    است
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-12 col-lg-5">
+                        <img src="image/Coffee-with-antioxidants.jpg" class="w-100 rounded  article-image" alt="درمان زانو درد">
+                    </div>
+                    <div class="col-12 col-lg-7 text-blue">
+                        <a href="#">
+                            <p class="color-blue mb-2 pb-2 d-none d-lg-block ">
+                                ویتامین ها
+                            </p>
+                            <h4 class=" text-right mb-2 text-dark fs-6 fw-bold">
+                                قهوه با ویتامین و آنتی اکسیدان اضافی
+
+                            </h4>
+                            <p class="text-justify pt-2 d-none d-lg-block  text-dark small-fontsize">
+                                یک قاشق چایخوری از برخی مواد غذایی همراه قهوه می تواند سلامتی شما را
+                                تقویت کند.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-12 col-lg-5 ">
+                        <img src="image/sozak.jpg" class="w-100 rounded img-fluid  article-image" alt="درمان زانو درد">
+                    </div>
+                    <div class="col-12 col-lg-7 text-blue">
+                        <a href="#">
+                            <p class="color-blue mb-2 pb-2 d-none d-lg-block ">
+                                بیماری ها
+                            </p>
+                            <h4 class=" text-right mb-2 text-dark fs-6 fw-bold">
+                                سوزاک: علل، علائم، تشخیص و درمان سوزاک
+                            </h4>
+                            <p class="text-justify pt-2 d-none d-lg-block text-dark small-fontsize">
+                                سوزاک یک عفونت مقاربتی است که از طریق رابطه جنسی گسترش پیدا می کند.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row-cols-12 my-5">
+            <div class="title"><span class="title-inner">پزشکان شفاجو</span></div>
+        </div>
+        <form action="" class="row g-0">
+            <div class="col-12 col-lg-3 py-2">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="دکتر علی مددی">
+            </div>
+            <div class="col-12 col-lg-3 py-2">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected class="text-center">تخصص</option>
+                    <option value="1">جراح دندانپزشک</option>
+                    <option value="2">جراح عمومی</option>
+                    <option value="3">تغذیه</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-3  py-2">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected class="text-center">تهران</option>
+                    <option value="1">خوزستان</option>
+                    <option value="2">البرز</option>
+                    <option value="3">گیلان</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-3 d-grid py-2">
+                <button class="btn background-blue text-white" type="submit">جستجو پزشک</button>
+            </div>
+        </form>
+        <div class="row py-5">
+            <div class=" col-12 col-lg-2 text-center px-4 ">
+                <div class="doctor-info  p-2 rounded">
+                    <a href="#" class="link-dark">
+                        <img src="image/ali-panahi.jpg" alt="علی پناهی" class="img-fluid rounded-circle border border-dark">
+                        <p class="fw-bold pt-3">علی پناهی</p>
+                        <p class="small-fontsize">تخصص جراحی کلیه،مجاری ادراری</p>
+                        <p class="small-fontsize pb-lg-2 text-secondary">تهران-تهران</p>
+                        <button class="col-12 btn background-blue text-white mt-lg-4">دریافت نوبت</button>
+                    </a>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-2 text-center px-4 ">
+                <div class="doctor-info  p-2 rounded">
+                    <a href="#" class="link-dark">
+                        <img src="image/mehrdad-nourozi-nia.jpg" alt="مهرداد نوزوزی نیا" class="img-fluid rounded-circle border border-dark">
+                        <p class="fw-bold pt-3">مهرداد نوزوزی نیا</p>
+                        <p class="small-fontsize">تخصص ژنتیک پزشکی</p>
+                        <p class="small-fontsize text-secondary">تهران-تهران</p>
+                        <button class="col-12  btn background-blue text-white mt-lg-5">دریافت نوبت</button>
+                    </a>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-2 text-center px-4 ">
+                <div class="doctor-info  p-2 rounded">
+                    <a href="#" class="link-dark">
+                        <img src="image/soheila-davar.jpg" alt="سهیلا داور " class="img-fluid rounded-circle border border-dark">
+                        <p class="fw-bold pt-3">سهیلا داور</p>
+                        <p class="small-fontsize">تخصص زنان و زایمان</p>
+                        <p class="small-fontsize text-secondary">تهران-تهران</p>
+                        <button class="col-12 btn background-blue text-white mt-lg-5">دریافت نوبت</button>
+                    </a>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-2 text-center px-4 ">
+                <div class="doctor-info  p-2 rounded">
+                    <a href="#" class="link-dark">
+                        <img src="image/zahra-saadati.jpg" alt="زهرا سعادتی" class="img-fluid rounded-circle border border-dark">
+                        <p class="fw-bold pt-3">زهرا سعادتی</p>
+                        <p class="small-fontsize">تخصص جراحی عمومی</p>
+                        <p class="small-fontsize text-secondary">تهران-تهران</p>
+                        <button class="col-12 btn background-blue text-white mt-lg-5">دریافت نوبت</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-2 text-center px-4 ">
+                <div class="doctor-info  p-2 rounded">
+                    <a href="#" class="link-dark">
+                        <img src="image/majid-kazemi.jpg" alt="مجید کاظمی" class="img-fluid rounded-circle border border-dark">
+                        <p class="fw-bold pt-3">مجید کاظمی</p>
+                        <p class="small-fontsize">تخصص گوش حلق بینی</p>
+                        <p class="small-fontsize text-secondary">تهران-تهران</p>
+                        <button class="col-12 btn background-blue text-white mt-lg-5">دریافت نوبت</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2 text-center px-4 ">
+                <div class="doctor-info  p-2 rounded">
+                    <a href="#" class="link-dark">
+                        <img src="image/masoud-sadroddini.jpg" alt="مسعود صدرالدینی" class="img-fluid rounded-circle border border-dark">
+                        <p class="fw-bold pt-3">مسعود صدرالدینی</p>
+                        <p class="small-fontsize">فوق تخصص گوارش و کبد </p>
+                        <p class="small-fontsize text-secondary">تهران-تهران</p>
+                        <button class="col-12 btn w-lg-50 background-blue text-white mt-lg-5">دریافت نوبت</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-10 d-grid gap-2 col-lg-3 mx-auto">
+                <button class="btn outline-blue doctor-btn" type="button"><i class="bi bi-box-arrow-in-right px-2"></i>لیست پزشکان</button>
+                <button class="btn btn-outline-secondary" type="button"><i class="bi bi-person-plus-fill px-2"></i>ثبت نام پزشکان</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="section-diet">
+    <div class="container">
+        <div class="row-cols-12 my-5 pt-3">
+            <div class="title"><span class="title-inner">رژیم شفاجو</span></div>
+        </div>
+        <div class="row px-3 px-lg-5 ">
+            <div class="col-12">
+                <p class="diet-content bg-gradient p-3 ">
+                    عادات غذایی غلط باعث شده تا رسیدن و نگه داشتن وزن ایده آل برای بسیاری افراد چالشی همیشگی باشد. از طرفی بسیاری رژیم های غذایی نادرست، بدون توجه به شرایط جسمانی هر شخص و نیازهای بدن به مواد غذایی مختلف باعث بیشتر آسیب زدن به بدن می شوند. این مسئله وقتی فرد مبتلا به بیماری خاصی باشد یا شرایط ویژه ای داشته باشد حتی دشوارتر از قبل نیز خواهد شد. ما در شفاجو، علاوه بر رژیم های چاقی و لاغری، برای کنترل و بیماری های شایع و رسیدن به وزن ایده آل نیز برنامه ی غذایی ارائه می دهیم.
+                </p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-4  px-3 px-lg-5 mt-4">
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم لاغری</p>
+                                <p class="text-white small-fontsize">با کاهش میزان کالری دریافتی</p>
+                            </div>
+                            <img src="image/slimming.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"> <i class="bi bi-info-circle-fill text-dark px-1"></i>اطلاعات بیشتر  در مورد رژیم لاغری  </p>
+                        </div>
+                         </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم چاقی</p>
+                                <p class="text-white small-fontsize">تناسب اندام و زیبایی حق من است</p>
+                            </div>
+                            <img src="image/obesity.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i>اطلاعات بیشتر در مورد رژیم چاقی </p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم دیابتی</p>
+                                <p class="text-white small-fontsize">معادل کننده قند خون</p>
+                            </div>
+                            <img src="image/diabetic.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark"></i>اطلاعات بیشتر   در مورد رژیم دیابتی</p>
+                        </div>
+                </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم چربی خون</p>
+                                <p class="text-white small-fontsize">کنترل کننده کلسترول</p>
+                            </div>
+                            <img src="image/blood-lipid.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i>اطلاعات بیشتر در مورد رژیم چربی خون </p>
+                        </div>
+                </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم فشار خون</p>
+                                <p class="text-white small-fontsize">رویکرد غذایی برای مدیریت فشارخون</p>
+                            </div>
+                            <img src="image/blood-pressure.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i>اطلاعات بیشتر در مورد رژیم فشارخون </p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم بارداری</p>
+                                <p class="text-white small-fontsize">لازمه ی تقویت قوای جسمانی مادر و کودک</p>
+                            </div>
+                            <img src="image/pregnancy.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i>اطلاعات بیشتر در مورد رژیم بارداری </p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم شیردهی</p>
+                                <p class="text-white small-fontsize">تاثیر مستقیم بر سلامت و رشد نوزاد</p>
+                            </div>
+                            <img src="image/lactation.jpg" class="card-img-top image" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i>اطلاعات بیشتر در مورد رژیم شیردهی </p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card" >
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم گیاهخواری</p>
+                                <p class="text-white small-fontsize">جایگزین محصولات و فراورده های گوشتی</p>
+                            </div>
+                            <img src="image/vegetarian.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i> اطلاعات بیشتر در مورد رژیم گیاهخواری </p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="card">
+                        <a href="#" class="d-block">
+                        <div class="image-text-container">
+                            <div class="image-text d-flex flex-column justify-content-center align-items-center background-blue">
+                                <p class="text-white mb-1 fw-bold ">رژیم اصلاح سبک تغذیه سالمندی</p>
+                                <p class="text-white small-fontsize">جایگزین محصولات و فراورده های گوشتی</p>
+                            </div>
+                            <img src="image/elderly-diet.jpg" class="card-img-top" alt="...">
+                            <div class="overlay-color"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-dark small-fontsize"><i class="bi bi-info-circle-fill text-dark px-1"></i>
+                                اطلاعات بیشتر در مورد رژیم سالمندی
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 d-grid gap-2 col-lg-3 mx-auto">
+                <button class="btn doctor-btn outline-blue" type="button"><i class="bi bi-box-arrow-in-right px-2"></i>دریافت   رژیم</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="video">
+<div class="container">
+    <div class="row py-5">
+        <div class="col-12">
+            <p class="text-white fw-bold">از زبان پزشک بشنوید</p>
+        </div>
+        <div class="row p-4">
+            <div class="col-12 col-lg-4 order-2 order-lg-1   side-container border-top border-bottom border-end border-light overflow-auto">
+                <a href="#" class="d-block">
+                    <div class="row border-bottom p-2">
+                        <div class="col-12 col-lg-8 side-text text-white ps-0 ">
+                            <p class="fw-bold m-0">آیا کودک من کیست مویی
+                                دارد؟
+                            </p>
+                            <p>اکثر مادران با یک فرو رفتگی انتهای
+                                ستون فقرات کودکانشان، مراجعه می کنند که بسیار نگران هستند که کیست
+                                مویی باشد  </p>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block  text-center">
+                            <img src="image/کیست-مویی.png" alt="کیست-مویی" class=" rounded">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-block">
+                    <div class="row  border-bottom p-2">
+                        <div class="col-12 col-lg-8 side-text text-white ps-0  ">
+                            <p class="fw-bold m-0 ">مقایسه تزریق چربی به باسن با پروتز باسن
+                            </p>
+                            <p class="">
+                                تزریق چربی محاسنی دارد که در واقع نقاطی از بدن که چاق هم هستند اصلاح
+                                میشوند چرا که چربی ها از آن
+                            </p>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block   text-center">
+                            <img src="image/مقایسه-تزریق-چربی-با-پروتز-باسن.png" alt="مقایسه-تزریق-چربی-با-پروتز-باسن" class=" rounded">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-block">
+                    <div class="row side border-bottom  p-2">
+                        <div class="col-12 col-lg-8 side-text text-white  ps-0  ">
+                            <p class="fw-bold m-0">عمل هموروئید با لیزر به چه
+                                صورت انجام می گیرد؟
+                            </p>
+                            <p class="">
+                                عمل هموروئید در مراحل اولیه همروئید بوسیله لیزر های کم توان طی چند
+                                جلسه برای گرید ۱و ۲ انجام می پذیرد
+                            </p>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block text-center">
+                            <img src="image/همروئید-با-لیزر.png" alt="همروئید-با-لیزر" class=" rounded">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="d-block">
+                    <div class="row p-2">
+                        <div class="col-12 col-lg-8 side-text text-white  ps-0 ">
+                            <p class="fw-bold m-0">اهمیت غربالگری در دوران
+                                بارداری
+                            </p>
+                            <p class="">
+                                غربالگری برای خانم های باردار در زمان حاملگی بسیار حائز اهمیت هست
+                            </p>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block  text-center  ">
+                            <img src="image/اهمیت-غربالگری-در-دوران-بارداری.png" alt="اهمیت-غربالگری-در-دوران-بارداری" class=" rounded">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-8   order-1 order-lg-2  m-0 p-0 " >
+                <a href="#" class="d-block">
+                    <div class="side-image-container">
+                        <img src="image/video-shafajoo.jpg" alt="یا استتاتوز یک اصطلاح است" class="img-fluid">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="health-center">
+    <div class="container">
+        <div class="row-cols-12 my-5 pt-3">
+            <div class="title"><span class="title-inner">مراکز درمانی</span></div>
+        </div>
+        <div class="row-cols-12">
+                <p>شما می توانید بیمارستان ها، درمانگاه ها ، مراکز تصویر برداری، آزمایشگاه ها، داروخانه ها و دیگر مراکز درمانی مورد نظر خود را در شفاجو پیدا کنید.
+                </p>
+        </div>
+        <form class="row d-flex justify-content-center my-5">
+            <div class="col-12 col-lg-6 p-0">
+                <input type="search" class="form-control" id="inputSearch" placeholder="نام مرکز درمانی مورد نظر خود را وارد نمایید ...">
+            </div>
+            <div class="col-12 col-lg-3  p-0">
+                <div class="d-grid ">
+                    <button class="btn background-blue text-white" type="button">جستجو</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container-fluid m-0">
+        <div class="row px-5">
+            <div class="col-12 icon-wrapper">
+                <div class="icons-container d-flex justify-content-center ">
+                    <a href="#" class="icon inline-block text-white mx-lg-3">
+                        <img src="image/aparat-22.png" alt="aparat" class="img-fluid">
+                    </a>
+                    <a href="#" class="icon inline-block text-white mx-lg-3 mx-2 link-hover">
+                        <i class="bi bi-telegram fs-5"></i>
+                    </a>
+                    <a href="#" class="icon inline-block text-white mx-lg-3 mx-2 link-hover">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="#" class="icon inline-block text-white mx-lg-3 mx-2 link-hover">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                    <a href="#" class="icon inline-block text-white mx-lg-3 mx-2 link-hover">
+                        <i class="bi bi-twitter fs-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-7">
+                <div class="row px-5">
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="#"  class="link-light link-hover small-fontsize">تبلیغات شفاجو</a>
+                    </div>
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="#"  class="link-light link-hover small-fontsize">رژیم انلاین</a>
+                    </div>
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="#"  class="link-light link-hover small-fontsize">پزشکان</a>
+                    </div>
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="#"  class="link-light link-hover small-fontsize">مجله</a>
+                    </div>
+                    <div class="col-6 col-lg-2 text-lg-center">
+                        <a href="#"  class="link-light link-hover small-fontsize">تماس با ما</a>
+                    </div>
+                    <div class="col-6 col-lg-2 text-lg-center ">
+                        <a href="#" class="link-light link-hover small-fontsize">قوانین و مقررات</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-4">
+            <div class="col-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-lg-2 text-center rounded">
+                        <div class="border border-4 rounded border-light m-1">
+                        <img src="image/anjoman.png" alt="انجمن" class="w-100 border-top border-dark border-end">
+                            </div>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center  rounded">
+                        <div class="border border-4 rounded border-light m-1">
+                        <img src="image/enamad.png" alt="انماد" class="w-100  border-top border-dark border-end border-start">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center  rounded">
+                        <div class="border border-4 rounded border-light m-1">
+                        <img src="image/khalagh.png" alt="شرکت های خلاق" class="w-100  border-top border-dark border-start">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 text-center">
+                        <div class="border border-4 rounded border-light m-1">
+                            <img src="image/samandehi.png" alt="ساماندهی" class="w-100 border-top border-dark">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex flex-column align-items-center m-0">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img src="image/logo-light.png" alt="" class=" w-25 ">
+            </div>
+            <div class="col-12 col-lg-3 pt-2 small-fontsize">
+                <p class="text-center text-white mb-0 ">تهران میدان تجریش خیابان غلام جعفری کوچه سعادتی</p>
+                <p class="text-center text-white">پلاک 26 22702850-021</p>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<div class="container-fluid p-0 m-0">
+    <div class="row site-info m-0 p-0">
+        <div class="col-12 m-0 h-25">
+            <p class="text-secondary text-center py-2 m-0">
+                Copyright © 2020 All rights reserved | Shafajoo.com
+            </p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
